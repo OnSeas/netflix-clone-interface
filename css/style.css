@@ -1,0 +1,124 @@
+/* Projeto feito como estudo de html, css e javascript na aula Recriando Interface da 
+Netflix pela Digital Inovation One.
+Feito por: Osmar Neto */
+
+/* --------- BASIC SETUP ---------*/
+
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* --------- NAVIGATION BAR ---------*/
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header nav input{
+    border: 1px solid var(--preto);
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #aaa;
+    outline: none;
+
+    transition: 0.5s ease all;
+}
+
+header nav input:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header nav input:focus{
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* --------- COVER ---------*/
+
+.cover{
+    font-size: 16px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cover.jpg);
+    background-position: right;
+    background-size: cover;
+    height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cover .container{
+    width: 70%;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cover .descricao{
+    margin-bottom: 35px;
+    width: 50%;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 15px 60px;
+    margin-right: 5px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.botao i{
+    margin-right: 15px;
+}
