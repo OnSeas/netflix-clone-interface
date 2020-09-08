@@ -45,6 +45,8 @@ header nav a{
     text-decoration: none;
     color: #aaa;
     margin-right: 10px;
+
+    transition: 0.5s ease all;
 }
 
 header nav a:hover{
@@ -121,4 +123,29 @@ header nav input:focus{
 
 .botao i{
     margin-right: 15px;
+}
+
+/* --------- Carrossel ---------*/
+
+.titulo-conteudos{
+    margin: 1.5% 0 0.5% 0;
+}
+
+.titulo-conteudos a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #aaa;
+
+    transition: 0.5s ease all;
+}
+
+.titulo-conteudos a:hover{
+    color: #fff;
+}
+
+.box-capa{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
