@@ -32,7 +32,6 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8vh;
 }
 
 header .logo{
@@ -81,7 +80,7 @@ header nav input:focus{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cover.jpg);
     background-position: right;
     background-size: cover;
-    height: 92vh;
+    height: 95vh;
 
     display: flex;
     flex-direction: column;
@@ -148,4 +147,5 @@ header nav input:focus{
     height: 100%;
     width: 100%;
     display: block;
+    cursor: pointer;
 }
